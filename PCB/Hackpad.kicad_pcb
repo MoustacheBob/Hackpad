@@ -87,7 +87,7 @@
 			(outputdirectory "")
 		)
 	)
-	(footprint "PCM_marbastlib-mx:SW_MX_1u"
+	(footprint "MX_Switch_3DModel:SW_MX_1u"
 		(layer "F.Cu")
 		(uuid "1523b6fa-3c4f-4f5d-877a-4492a3fc1554")
 		(at 90.4875 80.9625)
@@ -141,12 +141,6 @@
 		(path "/73b00cf7-bcf2-4a68-b873-fd2dace751c2")
 		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -379,11 +373,22 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${KICAD_CUSTOM_LIB}/3D/KiCAD-PCM-2026.03.22/MX_switch.step"
+			(offset
+				(xyz 0 -1 4.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
-	(footprint "Hackclub Care Package:SK6812MINI-E_fixed"
+	(footprint "Sk6812_MiniE_fixed_3DModel:SK6812MINI-E_fixed"
 		(layer "F.Cu")
 		(uuid "1edd0295-99ae-41e1-b6d9-aac49bf3e1fc")
-		(at 128.5875 147.8525)
+		(at 100 90.5)
 		(descr "Add-on for regular MX-footprints with SK6812 MINI-E")
 		(tags "cherry MX SK6812 Mini-E rearmount rear mount led rgb backlight")
 		(property "Reference" "D13"
@@ -434,7 +439,7 @@
 			)
 		)
 		(property "Field4" "1"
-			(at -2.499999 -2.102842 270)
+			(at -2.499999 -2.102842 90)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "b8e4d44d-a0fa-4f5f-9c57-2aa9218a8658")
@@ -450,12 +455,6 @@
 		(path "/5ecbafb9-6c1a-4bde-a27d-38ada7cc1fdd")
 		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "4" "1" "3" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -774,6 +773,7 @@
 		)
 		(embedded_fonts no)
 		(model "${KISYS3DMOD}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -784,11 +784,22 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount.step"
+			(offset
+				(xyz 0 0 -1.8)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -180 -0)
+			)
+		)
 	)
 	(footprint "Hackclub Care Package:XIAO-Generic-Hybrid-14P-2.54-21X17.8MM"
 		(layer "F.Cu")
 		(uuid "22aff76d-52dc-49a3-8e1c-cf3cf9fc46a7")
-		(at 91.125 60.92)
+		(at 90.875 58.46)
 		(property "Reference" "U1"
 			(at 0 2.54 0)
 			(layer "F.SilkS")
@@ -3853,11 +3864,22 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${KICAD_CUSTOM_LIB}/3D/KiCAD-PCM-2026.03.22/RP2040-Matrix.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
-	(footprint "Hackclub Care Package:SK6812MINI-E_fixed"
+	(footprint "Sk6812_MiniE_fixed_3DModel:SK6812MINI-E_fixed"
 		(layer "F.Cu")
 		(uuid "25fc6406-2b43-4351-9a7e-c91cfd08a27f")
-		(at 128.5875 142.9825)
+		(at 119 90.5)
 		(descr "Add-on for regular MX-footprints with SK6812 MINI-E")
 		(tags "cherry MX SK6812 Mini-E rearmount rear mount led rgb backlight")
 		(property "Reference" "D12"
@@ -3908,7 +3930,7 @@
 			)
 		)
 		(property "Field4" "1"
-			(at -2.499999 -2.102842 270)
+			(at -2.499999 -2.102842 90)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "b6ffc95d-63a8-4984-addb-ddd7b0eb2708")
@@ -3924,12 +3946,6 @@
 		(path "/2ee97b62-6810-4441-b55f-3226e5eb9e4c")
 		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "4" "1" "3" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -4248,6 +4264,7 @@
 		)
 		(embedded_fonts no)
 		(model "${KISYS3DMOD}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4258,11 +4275,22 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount.step"
+			(offset
+				(xyz 0 0 -1.8)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -180 -0)
+			)
+		)
 	)
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "3021fdaf-5536-47d2-972c-7359e7b8660a")
-		(at 100.0125 143.51 90)
+		(at 109.5375 143.51 90)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D5"
@@ -4564,7 +4592,7 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "3194388a-6bc2-4c68-a163-8e5e2f2a16b3")
-		(at 112.7625 143.51 90)
+		(at 124.5375 143.51 90)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D8"
@@ -4866,7 +4894,7 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "3224c1ec-259b-4613-99e3-25da67404210")
-		(at 83.0125 143.51 90)
+		(at 89.5 143.51 90)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D1"
@@ -5168,7 +5196,7 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "3cb4ab44-771c-43ca-b3de-3077b13ad195")
-		(at 104.2625 143.51 90)
+		(at 114.5375 143.51 90)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D6"
@@ -5183,7 +5211,7 @@
 			)
 		)
 		(property "Value" "D_Small"
-			(at 5.08 2.47 90)
+			(at 5.08 2.97 90)
 			(layer "F.Fab")
 			(uuid "9c5e4498-7e8c-4fe2-a742-0b1fad8011ba")
 			(effects
@@ -5421,7 +5449,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 5.47 0 90)
+			(at 5.47 0.5 90)
 			(layer "F.Fab")
 			(uuid "91d12043-54ef-45b4-ac64-ce86461b8396")
 			(effects
@@ -5470,7 +5498,7 @@
 	(footprint "Hackclub Care Package:SK6812MINI-E_fixed"
 		(layer "F.Cu")
 		(uuid "3e594d0a-8d93-4aa4-8406-827ad87a317a")
-		(at 128.5875 133.2425)
+		(at 100 109.5)
 		(descr "Add-on for regular MX-footprints with SK6812 MINI-E")
 		(tags "cherry MX SK6812 Mini-E rearmount rear mount led rgb backlight")
 		(property "Reference" "D10"
@@ -5521,7 +5549,7 @@
 			)
 		)
 		(property "Field4" "1"
-			(at -2.499999 -2.102842 270)
+			(at -2.499999 -2.102842 90)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "4cb3f702-eab0-4ff4-b8f7-f703b7fced53")
@@ -5537,12 +5565,6 @@
 		(path "/292ebf8e-3a67-4b55-a5a0-d78f9df2ed4a")
 		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "4" "1" "3" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -5861,6 +5883,7 @@
 		)
 		(embedded_fonts no)
 		(model "${KISYS3DMOD}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5873,20 +5896,20 @@
 		)
 		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -1.8)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -0)
 			)
 		)
 	)
-	(footprint "Hackclub Care Package:SK6812MINI-E_fixed"
+	(footprint "Sk6812_MiniE_fixed_3DModel:SK6812MINI-E_fixed"
 		(layer "F.Cu")
 		(uuid "3eb05ed3-fe90-4d07-af61-59d8eeeece6d")
-		(at 128.5875 138.1125)
+		(at 119 109.5)
 		(descr "Add-on for regular MX-footprints with SK6812 MINI-E")
 		(tags "cherry MX SK6812 Mini-E rearmount rear mount led rgb backlight")
 		(property "Reference" "D11"
@@ -5937,7 +5960,7 @@
 			)
 		)
 		(property "Field4" "1"
-			(at -2.499999 -2.102842 270)
+			(at -2.499999 -2.102842 90)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "1d574279-cea7-4fd8-9f96-c3e34fb40c46")
@@ -5953,12 +5976,6 @@
 		(path "/54b130de-6e41-4b7e-828d-67f1945e8fc8")
 		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "4" "1" "3" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -6277,6 +6294,7 @@
 		)
 		(embedded_fonts no)
 		(model "${KISYS3DMOD}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6285,6 +6303,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount.step"
+			(offset
+				(xyz 0 0 -1.8)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -180 -0)
 			)
 		)
 	)
@@ -6646,7 +6675,7 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "45133815-3dc8-487a-bb38-e80c2b49ca42")
-		(at 91.5125 143.51 90)
+		(at 99.5375 143.51 90)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D3"
@@ -6945,7 +6974,7 @@
 			)
 		)
 	)
-	(footprint "PCM_marbastlib-mx:SW_MX_1u"
+	(footprint "MX_Switch_3DModel:SW_MX_1u"
 		(layer "F.Cu")
 		(uuid "4feca8a6-3882-4b55-b719-c21596e906c4")
 		(at 90.4875 100.0125)
@@ -6999,12 +7028,6 @@
 		(path "/40b2bbc9-94fd-441c-b47f-82d199436765")
 		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7226,11 +7249,33 @@
 			(uuid "ce84e9dc-d463-4aaa-99ca-71de9fa31d5c")
 		)
 		(embedded_fonts no)
+		(model "C:/Users/kaerc/Downloads/SW_Cherry_MX_PCB.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD_CUSTOM_LIB}/3D/KiCAD-PCM-2026.03.22/MX_switch.step"
+			(offset
+				(xyz 0 -1 4.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Oled-SSD1306 0.91'':SSD1306-0.91-OLED-4pin-128x32"
 		(layer "F.Cu")
 		(uuid "86a5c86f-9496-46aa-bc14-f64bea9544ab")
-		(at 141.385 68.385 180)
+		(at 140.885 63.385 180)
 		(property "Reference" "Oled_Conn1"
 			(at 1.9 5.91 90)
 			(layer "F.SilkS")
@@ -7488,7 +7533,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "PCM_marbastlib-mx:SW_MX_1u"
+	(footprint "MX_Switch_3DModel:SW_MX_1u"
 		(layer "F.Cu")
 		(uuid "8bcf36de-9242-4034-9692-ed0a9ad7a8a3")
 		(at 128.5875 119.0625)
@@ -7542,12 +7587,6 @@
 		(path "/c6d9f258-c8eb-44e3-96a8-91bb3bcc960a")
 		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7769,8 +7808,30 @@
 			(uuid "3bc3e7de-fc9a-4d91-bcf4-029d8065ef32")
 		)
 		(embedded_fonts no)
+		(model "C:/Users/kaerc/Downloads/SW_Cherry_MX_PCB.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD_CUSTOM_LIB}/3D/KiCAD-PCM-2026.03.22/MX_switch.step"
+			(offset
+				(xyz 0 -1 4.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
-	(footprint "PCM_marbastlib-mx:SW_MX_1u"
+	(footprint "MX_Switch_3DModel:SW_MX_1u"
 		(layer "F.Cu")
 		(uuid "96d102ed-054f-46d3-9636-9c2dee89afa8")
 		(at 90.4875 119.0625)
@@ -7824,12 +7885,6 @@
 		(path "/209f9104-4128-447b-b201-0cefeb23f7e7")
 		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8051,11 +8106,33 @@
 			(uuid "532052db-daf3-4df3-bf3d-831bb03542aa")
 		)
 		(embedded_fonts no)
+		(model "C:/Users/kaerc/Downloads/SW_Cherry_MX_PCB.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD_CUSTOM_LIB}/3D/KiCAD-PCM-2026.03.22/MX_switch.step"
+			(offset
+				(xyz 0 -1 4.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "a5f74a9f-639e-4f72-b7b5-fc0ed46e5282")
-		(at 108.5125 143.51 90)
+		(at 119.5375 143.51 90)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D7"
@@ -8070,7 +8147,7 @@
 			)
 		)
 		(property "Value" "D_Small"
-			(at 5.08 2.47 90)
+			(at 5.08 2.72 90)
 			(layer "F.Fab")
 			(uuid "e5532308-746d-430a-a136-f3464335061b")
 			(effects
@@ -8354,7 +8431,7 @@
 			)
 		)
 	)
-	(footprint "PCM_marbastlib-mx:SW_MX_1u"
+	(footprint "MX_Switch_3DModel:SW_MX_1u"
 		(layer "F.Cu")
 		(uuid "bcf52d68-a8e1-4b11-8579-8c62d68df34e")
 		(at 109.5375 100.0125)
@@ -8408,12 +8485,6 @@
 		(path "/d8f156dd-0274-4590-bfcc-ffd77c617b6a")
 		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8635,8 +8706,30 @@
 			(uuid "4b7d4399-c293-489e-bf14-8bc7d73e1378")
 		)
 		(embedded_fonts no)
+		(model "C:/Users/kaerc/Downloads/SW_Cherry_MX_PCB.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD_CUSTOM_LIB}/3D/KiCAD-PCM-2026.03.22/MX_switch.step"
+			(offset
+				(xyz 0 -1 4.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
-	(footprint "PCM_marbastlib-mx:SW_MX_1u"
+	(footprint "MX_Switch_3DModel:SW_MX_1u"
 		(layer "F.Cu")
 		(uuid "bd6f65e5-c87c-4a4d-9414-dbabb8c0ec64")
 		(at 109.5375 119.0625)
@@ -8690,12 +8783,6 @@
 		(path "/501f2175-c04e-4dc3-a723-29d3207b6fc4")
 		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8917,11 +9004,33 @@
 			(uuid "f84a1cf1-f468-4573-b421-75cfbc195830")
 		)
 		(embedded_fonts no)
+		(model "C:/Users/kaerc/Downloads/SW_Cherry_MX_PCB.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD_CUSTOM_LIB}/3D/KiCAD-PCM-2026.03.22/MX_switch.step"
+			(offset
+				(xyz 0 -1 4.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "cc8bc2f8-c909-4199-a938-c464e922d162")
-		(at 117.0125 143.51 90)
+		(at 129.5375 143.51 90)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D9"
@@ -9223,7 +9332,7 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "d71f90df-2ce2-4b3a-983a-b07f6a9c3ebe")
-		(at 87.2625 143.51 90)
+		(at 94.5375 143.51 90)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D2"
@@ -9525,7 +9634,7 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "dd756c03-7236-4340-b022-2271acf46da2")
-		(at 95.7625 143.51 90)
+		(at 104.5375 143.51 90)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D4"
@@ -9824,7 +9933,7 @@
 			)
 		)
 	)
-	(footprint "PCM_marbastlib-mx:SW_MX_1u"
+	(footprint "MX_Switch_3DModel:SW_MX_1u"
 		(layer "F.Cu")
 		(uuid "e1eef12f-de31-4003-aab8-43504b35a668")
 		(at 128.5875 100.0125)
@@ -9878,12 +9987,6 @@
 		(path "/a87ab80c-7f78-4b33-a728-01703fb960ba")
 		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10105,8 +10208,30 @@
 			(uuid "7637ef2f-5037-45ca-8c84-a0eb86463d72")
 		)
 		(embedded_fonts no)
+		(model "C:/Users/kaerc/Downloads/SW_Cherry_MX_PCB.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD_CUSTOM_LIB}/3D/KiCAD-PCM-2026.03.22/MX_switch.step"
+			(offset
+				(xyz 0 -1 4.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
-	(footprint "PCM_marbastlib-mx:SW_MX_1u"
+	(footprint "MX_Switch_3DModel:SW_MX_1u"
 		(layer "F.Cu")
 		(uuid "f383f786-d586-4e38-9681-e112fc278e76")
 		(at 109.5375 80.9625)
@@ -10160,12 +10285,6 @@
 		(path "/e461dba7-6919-44c5-b0fe-22abee16007a")
 		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10387,10 +10506,32 @@
 			(uuid "ac142814-43ec-4e4d-8431-698bf4dd1fdf")
 		)
 		(embedded_fonts no)
+		(model "C:/Users/kaerc/Downloads/SW_Cherry_MX_PCB.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD_CUSTOM_LIB}/3D/KiCAD-PCM-2026.03.22/MX_switch.step"
+			(offset
+				(xyz 0 -1 4.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(gr_rect
-		(start 71.4375 50.5)
-		(end 145.25 152.4)
+		(start 71.4375 48)
+		(end 145.25 146.5)
 		(stroke
 			(width 0.05)
 			(type default)

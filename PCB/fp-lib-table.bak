@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Sk6812_MiniE_fixed_3DModel") (type "KiCad") (uri "${KIPRJMOD}/Sk6812_MiniE_fixed_3DModel.pretty") (options "") (descr ""))
+)
